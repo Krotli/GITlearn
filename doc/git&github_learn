@@ -39,3 +39,5 @@ git reset commitID:回复某个提交的ID版本
 分支
 
 GITHUB配置
+
+需要创建一个远程仓库
