@@ -57,4 +57,7 @@ GITHUB配置
    之后push去掉-u
 
 CLONE
-从远程的仓库clone一个到本地的目录下同时生成本地仓库。
+git clone [url]:从远程的仓库clone一个到本地目录下同时生成本地仓库。
+
+PULL
+git pull = git fetch+git merge
