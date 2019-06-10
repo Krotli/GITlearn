@@ -1,0 +1,41 @@
+GIT和GITHUB
+
+配置全局身份
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+创建本地repository
+git init
+
+基本操作
+git status:当前仓库状态（当前处于哪个分支、有哪些尚未add的修改、哪些尚未commit）
+git add：把文件修改添加的暂存区
+git commit -m “”：就是把暂存区一次性提交到当前分支
+git log:查看提交的记录
+git reflog：查看执行过的命令（可以用来查看曾经某个commit的ID）
+git diff：+文件名 比较工作区和暂存区的区别
+		  +master 比较工作区和master分支的区别
+git checkout:+文件名 从暂存区之中回复某个文件至工作区
+git rm:从当前仓库之中删除某个文件
+
+撤销修改或删除：修改工作区
+撤销修改有两种，从版本库恢复自己工作区的（这时候修改还没有add）。
+还有一种是已经add进了暂存区，又作了修改。这时是从暂存区恢复到工作区。
+也就是说，让工作区恢复到commit或add的上一次的状态，即便是删除了文件。
+用git checkout -- 文件名。
+
+撤销修改：修改暂存区
+git reset HEAD 文件名
+保留工作区修改，删除暂存区。
+
+回溯提交版本：git reset会直接清楚暂存区
+git reset HEAD^:回复上一个版本
+git reset commitID:回复某个提交的ID版本
+
+
+工作区：存放本地工程和代码
+版本库repository：.git目录，包括暂存区、分支信息
+暂存区(index or stage)
+分支
+
+GITHUB配置
