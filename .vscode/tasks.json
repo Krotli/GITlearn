@@ -1,14 +1,17 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
+            "type": "shell",
+            "label": "self build",
             "command": "E:\\MingGW\\bin\\g++.exe",
             "args": [
                 "-g",
-                "${file}",
+                "${workspaceFolder}\\*.cpp",
+                "${workspaceFolder}\\src\\*.cpp",
+                "-I",
+                "${workspaceFolder}\\include\\",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}\\out\\${workspaceFolderBasename}.exe",
                 "-std=c++17"
             ],
             "options": {

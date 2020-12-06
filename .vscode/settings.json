@@ -5,4 +5,5 @@
         "editor.insertSpaces":true,
         "editor.renderWhitespace": "selection"
     },
+    "files.eol": "\n",
 }
