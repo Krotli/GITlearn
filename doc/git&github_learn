@@ -61,3 +61,5 @@ git clone [url]:从远程的仓库clone一个到本地目录下同时生成本�
 
 PULL
 git pull = git fetch+git merge
+
+远端仓库变化1
